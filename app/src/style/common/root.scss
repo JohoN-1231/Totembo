@@ -1,0 +1,41 @@
+$white: #fff;
+$black: #000;
+$lightGray: #e5e5e5;
+$gray: #e1e1e1;
+$lightBlack: #323232;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: $lightGray;
+    &.active{
+        overflow: hidden;
+    }
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    @include container();
+}
+.wrapper{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    &.active{
+        display: block;
+    }
+}

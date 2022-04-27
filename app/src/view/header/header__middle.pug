@@ -1,0 +1,22 @@
+.header__middle
+    .container 
+        .header__middle-inner
+            nav.nav
+                i.header__menu.far.fa-bars 
+                ul.nav__list 
+                    -var list = ["Часы", "Кольца", "Серьги","Браслеты", "Клатчи", "Цепочки"]
+                        each menu in list
+                            li.nav__item 
+                                a(class="nav__link", href="#!")=menu
+            .header__middle-social
+                a.header__middle-like(href="#!")
+                    i.far.fa-heart
+                a.header__middle-card(href="#!") 
+                    i.far.fa-shopping-cart
+                a.header__middle-user(href="#!")
+                    i.far.fa-user                           
+                
+                
+                
+                
+                
